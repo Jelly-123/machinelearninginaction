@@ -15,6 +15,8 @@ from numpy import *
 import operator
 from os import listdir
 
+# knn implement 
+# http://blog.csdn.net/u013562700/article/details/77150844
 def classify0(inX, dataSet, labels, k):
     dataSetSize = dataSet.shape[0]
     diffMat = tile(inX, (dataSetSize,1)) - dataSet
